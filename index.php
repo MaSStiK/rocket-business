@@ -117,7 +117,7 @@
 
     <div class="modal__wrapper hide-block">
         <!-- Не нашел хостинг на котором можно было бы отправить письмо через php mail -->
-        <form class="modal" action="https://formsubmit.co/rbru-metrika@yandex.ru" method="POST">
+        <form class="modal" action="https://formsubmit.co/matvey.ovchinnikov.2014@mail.ru" method="POST">
             <h1 class="modal__title">Запись на прием</h1>
             <input type="text" name="name" class="modal__input" id="form_name" maxlength="200" placeholder="ФИО" required>
             <input type="phone" name="phone" class="modal__input" id="form_phone" placeholder="Телефон" required>
