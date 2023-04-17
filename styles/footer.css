@@ -1,0 +1,90 @@
+footer {
+    width: 100%;
+    height: 144px;
+    background: #08664F;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* Пришлось сделать костыль ибо в макете навигация центрирована независимо от других блоков,
+     а space-between центрирует относитльно других блоков,
+     margin 0 auto тоже не сделал идеально по центру */
+}
+
+.footer__logo {
+    position: absolute;
+    left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+footer li {
+    transition: 0.25s all;
+}
+
+footer li:not(:first-child) {
+    margin-left: 30px;
+}
+
+
+footer li:hover {
+    scale: 1.1;
+}
+
+.footer__contacts {
+    position: absolute;
+    right: 16px;
+    display: flex;
+    margin-right: auto;
+}
+
+.footer__contacts-link {
+    height: 35px;
+    width: 35px;
+    transition: 0.25s all;
+}
+
+.footer__contacts-link:not(:first-child) {
+    margin-left: 15px;
+}
+
+.footer__contacts-link:hover {
+    scale: 1.1;
+}
+
+/* tablet */
+@media screen and (max-width: 830px) { 
+    footer {
+        height: 72px;
+    }
+
+    footer ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    footer {
+        display: none;
+    }
+}

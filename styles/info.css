@@ -1,0 +1,124 @@
+.info {
+    width: 100%;
+    height: 533px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #F8FBFA;
+}
+
+.info .container {
+    display: flex;
+}
+
+.info__block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 144px;
+}
+
+.info__title {
+    width: 416px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    color: #364844;
+    word-break: break-word;
+}
+
+.info__text {
+    width: 367px;
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #364844;
+    word-break: break-word;
+}
+
+.info__img {
+    width: 950px;
+    height: 532px;
+    margin-left: 164px;
+}
+
+.info__img_phone {
+    width: 100%;
+    height: 288px;
+    background-image: url("../assets/images/image.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .info__img {
+        margin-left: 0;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 830px) { 
+    .info {
+        height: 100%;
+        margin-top: 65px;
+    }
+
+    .info .container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .info__img {
+        display: none;
+    }
+
+    .info__img_phone {
+        display: block;
+    }
+
+    .info__block {
+        margin: 34px 17px 34px 17px;
+        align-items: center;
+    }
+
+    .info__title {
+        width: 360px;
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .info__title br {
+        display: none;
+    }
+
+    .info__text {
+        width: 360px;
+        margin-top: 9px;
+        font-size: 16px;
+    }
+}
+
+/* phone */
+@media screen and (max-width: 550px) {
+    .info__title {
+        width: 100%;
+    }
+
+    .info__text {
+        width: 100%;
+    }
+}
+
+/* small phone */
+@media screen and (max-width: 400px) {
+    .info__title br {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .info__block {
+        margin: 8px;
+    }
+}

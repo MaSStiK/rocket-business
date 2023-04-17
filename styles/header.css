@@ -1,0 +1,179 @@
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 66px;
+    overscroll-behavior: contain;
+    z-index: 2;
+}
+
+
+header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__group {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__location {
+    margin-left: 23.8px;
+    display: flex;
+}
+
+.header__location-position {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6.65px;
+}
+
+.header__location-city {
+    margin-top: 2px;
+    font-size: 14px;
+    /* line-height: 21px; */
+    color: #364844;
+}
+
+.header__location-street {
+    font-size: 14px;
+    /* line-height: 21px; */
+    color: #868686;
+}
+
+.header__contact-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s all;
+    cursor: pointer;
+}
+
+.header__contact-img:hover {
+    scale: 1.1;
+}
+
+.header__contact-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 9px;
+}
+
+.header__contact-number {
+    font-size: 16px;
+    line-height: 24px;
+    color: #364844;
+}
+
+.header__contact-city {
+    font-size: 13px;
+    line-height: 24px;
+    color: #364844;
+    display: none;
+}
+
+.header__contact-button {
+    margin-left: 35px;
+}
+
+.header__burger, .header__close {
+    transition: 0.25s all;
+    cursor: pointer;
+    margin: 4px 0 0 0;
+    display: none;
+}
+
+.header__close {
+    margin: 4px 8px 0 0;
+}
+
+.header__burger:hover, .header__close:hover {
+    scale: 1.1;
+}
+
+/* tablet */
+@media screen and (max-width: 830px) {
+    .show-on-phone {
+        display: flex;
+    }
+
+    .hide-on-phone {
+        display: none;
+    }
+
+    header {
+        height: 65px;
+        background: #F7F7F7;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    header .container {
+        padding: 0 18px 0 17px;
+    }
+
+    .header__logo {
+        margin-left: 43px;
+    }
+
+    .header__logo img {
+        width: 62px;
+    }
+
+    .header__contact-button {
+        display: none;
+    }
+
+    .header__location {
+        display: none;
+    }
+
+    .header__contact-block {
+        margin: 14px 0 0 0;
+    }
+
+    .header__contact-img {
+        display: none;
+    }
+
+
+    .header__contact-number {
+        font-size: 16px;
+        line-height: 12px;
+    }
+
+    .header__contact-city {
+        display: block;
+    }
+}
+
+/* phone */
+@media screen and (max-width: 550px) {
+
+}
+
+/* small phone */
+@media screen and (max-width: 370px) {
+    header .container {
+        padding: 0 8px;
+    }
+
+    .header__contact-number {
+        font-size: 12px;
+    }
+
+    .header__logo {
+        margin-left: 12px;
+    }
+}
